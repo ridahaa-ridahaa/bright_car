@@ -1,0 +1,28 @@
+
+:root{
+  --primary:#0b3d91;
+  --accent:#22a39f;
+  --bg:#f7fbff;
+  --card:#ffffff;
+}
+*{box-sizing:border-box;font-family: 'Arial', sans-serif}
+body{margin:0;background:var(--bg);color:#111}
+.appbar{background:var(--primary);color:white;padding:18px 16px;text-align:center;font-size:20px;font-weight:700}
+.cards{padding:16px;display:flex;flex-direction:column;gap:12px}
+.card{display:flex;justify-content:space-between;align-items:center;background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(11,61,145,0.08)}
+.card-content{direction:rtl}
+.card h4{margin:0;font-size:18px}
+.price{color:#333;margin-top:6px}
+.card-action .btn{padding:10px 16px;border-radius:10px;border:none;background:var(--accent);color:white;cursor:pointer}
+.btn{padding:10px 12px;border-radius:10px;border:1px solid #ddd;background:white;cursor:pointer}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.35);z-index:50}
+.modal.hidden{display:none}
+.modal-body{background:white;padding:20px;border-radius:12px;width:92%;max-width:420px;text-align:right}
+.modal-body h3{margin-top:0}
+label{display:block;margin:10px 0}
+.totals{margin-top:10px}
+.total{font-weight:700;margin-top:8px}
+.footer-note{padding:20px;text-align:center;color:#666;font-size:13px}
+@media(min-width:800px){
+  .cards{max-width:700px;margin:20px auto}
+}
