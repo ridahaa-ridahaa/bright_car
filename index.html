@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="manifest" href="./manifest.json">
   <title>WashMobile - غسيل سيارات متنقل</title>
-  <link rel="stylesheet"./href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="appbar">
@@ -18,35 +18,10 @@
     </section>
   </main>
 
-  <div id="bookingModal" class="modal hidden">
-    <div class="modal-body">
-      <h3 id="svcName"></h3>
-      <p>السعر: <span id="svcPrice"></span> ريال</p>
-      <label>الكمية:
-        <input type="number" id="qty" value="1" min="1"/>
-      </label>
-      <div class="totals">
-        <div>المجموع: <span id="subtotal">0.00</span> ريال</div>
-        <div>الضريبة (15%): <span id="tax">0.00</span> ريال</div>
-        <div class="total">الإجمالي: <span id="total">0.00</span></div>
-      </div>
-      <button id="confirmBooking" class="btn primary">تأكيد الحجز</button>
-      <button id="closeModal" class="btn">إغلاق</button>
-    </div>
-  </div>
+  <!-- باقي الكود ... -->
 
-  <template id="serviceCardTpl">
-    <article class="card">
-      <div class="card-content">
-        <h4 class="svc-name"></h4>
-        <div class="price"></div>
-      </div>
-      <div class="card-action">
-        <button class="btn book">احجز</button>
-      </div>
-    </article>
-  </template>
-
-  <script src="app.js"></script>
+  <!-- سكربتات -->
+  <script src="./app.js"></script>
+  <script src="./service-worker.js"></script>
 </body>
 </html>
